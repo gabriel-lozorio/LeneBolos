@@ -1,0 +1,80 @@
+.catalog {
+  background: var(--white);
+}
+
+.catalog-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+  gap: 30px;
+}
+
+.cake-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  box-shadow: var(--shadow);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.cake-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 12px 40px rgba(0, 0, 0, 0.15);
+}
+
+.cake-image {
+  width: 100%;
+  height: 250px;
+  overflow: hidden;
+}
+
+.cake-image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.cake-card:hover .cake-image img {
+  transform: scale(1.05);
+}
+
+.cake-info {
+  padding: 24px;
+}
+
+.cake-info h3 {
+  font-size: 1.4rem;
+  margin-bottom: 10px;
+  color: var(--dark);
+}
+
+.cake-info p {
+  color: var(--text-light);
+  font-size: 0.95rem;
+  margin-bottom: 15px;
+  line-height: 1.5;
+}
+
+.cake-price {
+  display: block;
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: var(--gold);
+  margin-bottom: 15px;
+}
+
+.cake-btn {
+  width: 100%;
+  justify-content: center;
+  padding: 12px 20px;
+}
+
+@media (max-width: 480px) {
+  .catalog-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .cake-image {
+    height: 200px;
+  }
+}
