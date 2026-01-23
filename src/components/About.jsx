@@ -14,7 +14,7 @@ function About() {
           <div className="about-text">
             <h2>Sobre a LeneBolos</h2>
             <p className="about-intro">
-              Bolos caseiros de verdade, com gosto de casa.
+              Bolos caseiros de verdade.
             </p>
             <p>
               A LeneBolos nasceu do amor pela confeitaria e das receitas que

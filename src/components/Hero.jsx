@@ -9,7 +9,7 @@ function Hero() {
     <section className="hero">
       <div className="container hero-content">
         <div className="hero-text">
-          <h1>Bolos Caseiros com Gosto de Casa</h1>
+          <h1>Bolos Caseiros da Lene</h1>
           <p>
             Receitas de família, ingredientes naturais e muito carinho.
             Do jeito que a vovó fazia.
