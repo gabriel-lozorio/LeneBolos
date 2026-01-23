@@ -9,10 +9,10 @@ function Hero() {
     <section className="hero">
       <div className="container hero-content">
         <div className="hero-text">
-          <h1>Bolos Artesanais Feitos com Amor</h1>
+          <h1>Bolos Caseiros com Gosto de Casa</h1>
           <p>
-            Transformamos momentos especiais em memórias doces.
-            Cada bolo é preparado com ingredientes selecionados e muito carinho.
+            Receitas de família, ingredientes naturais e muito carinho.
+            Do jeito que a vovó fazia.
           </p>
           <div className="hero-buttons">
             <a href="#catalogo" className="btn btn-primary">Ver Catálogo</a>

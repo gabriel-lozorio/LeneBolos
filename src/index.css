@@ -76,12 +76,12 @@ img {
 }
 
 .btn-whatsapp {
-  background: #25D366;
+  background: var(--gold);
   color: var(--white);
 }
 
 .btn-whatsapp:hover {
-  background: #1DA851;
+  background: var(--primary-dark);
   transform: translateY(-2px);
   box-shadow: var(--shadow);
 }

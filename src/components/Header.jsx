@@ -6,6 +6,7 @@ function Header() {
       <div className="container header-content">
         <a href="#" className="logo">
           <img src="/logo.png" alt="LeneBolos" className="logo-img" />
+          <span className="logo-text">Lene Bolos Caseiros</span>
         </a>
         <nav className="nav">
           <a href="#catalogo">Catálogo</a>

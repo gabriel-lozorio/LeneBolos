@@ -19,11 +19,20 @@
 .logo {
   display: flex;
   align-items: center;
+  gap: 12px;
 }
 
 .logo-img {
   height: 60px;
   width: auto;
+}
+
+.logo-text {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.4rem;
+  font-weight: 500;
+  color: var(--gold);
+  letter-spacing: 0.5px;
 }
 
 .nav {
@@ -51,8 +60,12 @@
     height: 70px;
   }
 
-  .logo {
-    font-size: 1.4rem;
+  .logo-img {
+    height: 50px;
+  }
+
+  .logo-text {
+    display: none;
   }
 
   .nav {

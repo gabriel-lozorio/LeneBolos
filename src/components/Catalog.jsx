@@ -7,8 +7,8 @@ const cakes = [
   { id: 4, name: "Bolo de Limão", description: "Bolo cítrico e refrescante com cobertura de limão.", ativo: true },
   { id: 5, name: "Bolo de Fubá com Goiabada", description: "Tradicional bolo de fubá com pedaços de goiabada cascão.", ativo: true },
   { id: 6, name: "Bolo de Milho com Coco", description: "Bolo caseiro de milho com coco ralado, sabor de fazenda.", ativo: true },
-  { id: 7, name: "Bolo de Cenoura c/ Gotas", description: "Bolo fofinho de cenoura com gotas de chocolate na massa.", ativo: true },
-  { id: 8, name: "Bolo de Cenoura c/ Calda", description: "Clássico bolo de cenoura com calda generosa de chocolate.", ativo: true },
+  { id: 7, name: "Bolo de Cenoura com Gotas", description: "Bolo fofinho de cenoura com gotas de chocolate na massa.", ativo: true },
+  { id: 8, name: "Bolo de Cenoura com Calda", description: "Clássico bolo de cenoura com calda generosa de chocolate.", ativo: true },
   { id: 9, name: "Bolo de Coco", description: "Bolo macio de coco com cobertura cremosa de coco.", ativo: true },
   { id: 10, name: "Bolo Formigueiro", description: "Divertido bolo formigueiro com cobertura de chocolate.", ativo: false }
 ]
