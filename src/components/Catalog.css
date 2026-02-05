@@ -25,6 +25,44 @@
   width: 100%;
   height: 250px;
   overflow: hidden;
+  position: relative;
+}
+
+.cake-badges {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.badge {
+  padding: 4px 8px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  color: white;
+  font-size: 0.7rem;
+  font-weight: 600;
+}
+
+.badge svg {
+  width: 14px;
+  height: 14px;
+}
+
+.badge-gluten {
+  background: #8B4513;
+}
+
+.badge-acucar {
+  background: #2E7D32;
+}
+
+.badge-lactose {
+  background: #1976D2;
 }
 
 .cake-image img {

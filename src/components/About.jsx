@@ -1,15 +1,51 @@
+import { useState, useEffect } from 'react'
 import './About.css'
 
+const sobreImages = [
+  '/sobre.jpeg',
+  '/sobre2.jpeg',
+  '/sobre3.jpeg',
+  '/sobre4.jpeg'
+  ]
+
 function About() {
+  const [currentImage, setCurrentImage] = useState(0)
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImage((prev) => (prev + 1) % sobreImages.length)
+    }, 3000)
+    return () => clearInterval(interval)
+  }, [])
+
+  const nextImage = () => {
+    setCurrentImage((prev) => (prev + 1) % sobreImages.length)
+  }
+
+  const prevImage = () => {
+    setCurrentImage((prev) => (prev - 1 + sobreImages.length) % sobreImages.length)
+  }
+
   return (
     <section id="sobre" className="about">
       <div className="container">
         <div className="about-content">
           <div className="about-image">
+            <button className="slider-btn slider-prev" onClick={prevImage}>‹</button>
             <img
-              src="/sobre.jpeg"
+              src={sobreImages[currentImage]}
               alt="LeneBolos"
             />
+            <button className="slider-btn slider-next" onClick={nextImage}>›</button>
+            <div className="slider-dots">
+              {sobreImages.map((_, index) => (
+                <span
+                  key={index}
+                  className={`dot ${index === currentImage ? 'active' : ''}`}
+                  onClick={() => setCurrentImage(index)}
+                />
+              ))}
+            </div>
           </div>
           <div className="about-text">
             <h2>Sobre a LeneBolos</h2>

@@ -1,16 +1,16 @@
 import './Catalog.css'
 
 const cakes = [
-  { id: 1, name: "Bolo de Chocolate", description: "Delicioso bolo de chocolate com cobertura cremosa de chocolate.", ativo: true },
-  { id: 2, name: "Bolo de Paçoca", description: "Bolo saboroso de paçoca com cobertura especial de amendoim.", ativo: true },
-  { id: 3, name: "Bolo de Laranja", description: "Bolo fresquinho de laranja com calda caseira de laranja.", ativo: true },
-  { id: 4, name: "Bolo de Limão", description: "Bolo cítrico e refrescante com cobertura de limão.", ativo: true },
-  { id: 5, name: "Bolo de Fubá com Goiabada", description: "Tradicional bolo de fubá com pedaços de goiabada cascão.", ativo: true },
-  { id: 6, name: "Bolo de Milho com Coco", description: "Bolo caseiro de milho com coco ralado, sabor de fazenda.", ativo: true },
-  { id: 7, name: "Bolo de Cenoura com Gotas", description: "Bolo fofinho de cenoura com gotas de chocolate na massa.", ativo: true },
-  { id: 8, name: "Bolo de Cenoura com Calda", description: "Clássico bolo de cenoura com calda generosa de chocolate.", ativo: true },
-  { id: 9, name: "Bolo de Coco", description: "Bolo macio de coco com cobertura cremosa de coco.", ativo: true },
-  { id: 10, name: "Bolo Formigueiro", description: "Divertido bolo formigueiro com cobertura de chocolate.", ativo: false }
+  { id: 1, name: "Bolo de Chocolate", description: "Delicioso bolo de chocolate com cobertura cremosa de chocolate.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 2, name: "Bolo de Paçoca", description: "Bolo saboroso de paçoca com cobertura especial de amendoim.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 3, name: "Bolo de Laranja", description: "Bolo fresquinho de laranja com calda caseira de laranja.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 4, name: "Bolo de Limão", description: "Bolo cítrico e refrescante com cobertura de limão.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 5, name: "Bolo de Fubá com Goiabada", description: "Tradicional bolo de fubá com goiabada.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 6, name: "Bolo de Milho com Coco", description: "Bolo caseiro de milho com coco ralado, sabor de fazenda.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  // { id: 7, name: "Bolo de Cenoura com Gotas", description: "Bolo fofinho de cenoura com gotas de chocolate na massa.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 8, name: "Bolo de Cenoura com Calda", description: "Clássico bolo de cenoura com calda generosa de chocolate.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 9, name: "Bolo de Coco", description: "Bolo macio de coco com cobertura cremosa de coco.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 10, name: "Bolo de Milho com Coco Zero Açúcar", description: "Bolo caseiro de milho com coco, sem glúten e zero açúcar.", ativo: true, glutenFree: true, zeroAcucar: true, semLactose: false }
 ]
 
 function Catalog() {
@@ -32,6 +32,35 @@ function Catalog() {
             <div key={cake.id} className="cake-card">
               <div className="cake-image">
                 <img src={`/bolos/${cake.id}.jpeg`} alt={cake.name} />
+                <div className="cake-badges">
+                  {cake.glutenFree && (
+                    <span className="badge badge-gluten">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 5h2v2h-2V7zm-3 8l1.5-1.5L12 16l2.5-2.5L16 15l-4 4-4-4zm4-3c-1.1 0-2-.9-2-2h4c0 1.1-.9 2-2 2z"/>
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" strokeWidth="2"/>
+                      </svg>
+                      Sem Glúten
+                    </span>
+                  )}
+                  {cake.zeroAcucar && (
+                    <span className="badge badge-acucar">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M12 2L4 7v10l8 5 8-5V7l-8-5zm0 2.5L18 8v8l-6 3.5L6 16V8l6-3.5z"/>
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" strokeWidth="2"/>
+                      </svg>
+                      Zero Açúcar
+                    </span>
+                  )}
+                  {cake.semLactose && (
+                    <span className="badge badge-lactose">
+                      <svg viewBox="0 0 24 24" fill="currentColor">
+                        <path d="M5 6h14v2H5zM5 10h14v8a2 2 0 01-2 2H7a2 2 0 01-2-2v-8z"/>
+                        <line x1="4" y1="4" x2="20" y2="20" stroke="currentColor" strokeWidth="2"/>
+                      </svg>
+                      Sem Lactose
+                    </span>
+                  )}
+                </div>
               </div>
               <div className="cake-info">
                 <h3>{cake.name}</h3>
