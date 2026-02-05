@@ -6,7 +6,7 @@ const cakes = [
   { id: 3, name: "Bolo de Laranja", description: "Bolo fresquinho de laranja com calda caseira de laranja.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
   { id: 4, name: "Bolo de Limão", description: "Bolo cítrico e refrescante com cobertura de limão.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
   { id: 5, name: "Bolo de Fubá com Goiabada", description: "Tradicional bolo de fubá com goiabada.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 6, name: "Bolo de Milho com Coco", description: "Bolo caseiro de milho com coco ralado, sabor de fazenda.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 6, name: "Bolo de Milho com Coco", description: "Bolo caseiro de milho com coco ralado, sabor da roça.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
   // { id: 7, name: "Bolo de Cenoura com Gotas", description: "Bolo fofinho de cenoura com gotas de chocolate na massa.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
   { id: 8, name: "Bolo de Cenoura com Calda", description: "Clássico bolo de cenoura com calda generosa de chocolate.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
   { id: 9, name: "Bolo de Coco", description: "Bolo macio de coco com cobertura cremosa de coco.", ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
