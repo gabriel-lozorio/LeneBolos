@@ -107,6 +107,14 @@
   padding: 12px 20px;
 }
 
+.delivery-note {
+  text-align: center;
+  color: var(--text-light);
+  font-size: 0.9rem;
+  margin-top: 30px;
+  font-style: italic;
+}
+
 @media (max-width: 480px) {
   .catalog-grid {
     grid-template-columns: 1fr;
