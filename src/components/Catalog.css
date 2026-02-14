@@ -110,7 +110,7 @@
 .delivery-note {
   text-align: center;
   color: var(--text-light);
-  font-size: 0.9rem;
+  font-size: 1.25rem;
   margin-top: 30px;
   font-style: italic;
 }

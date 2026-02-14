@@ -80,7 +80,7 @@ function Catalog() {
           ))}
         </div>
 
-        <p className="delivery-note">* Taxa de entrega: valores a combinar</p>
+        <p className="delivery-note">* Bolos com peso médio de 1kg<br />Taxa de entrega: valores a combinar</p>
       </div>
     </section>
   )
