@@ -12,7 +12,7 @@ const cakes = [
   { id: 9, name: "Bolo de Coco", description: "Bolo macio de coco com cobertura cremosa de coco.", price: 35, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
   { id: 10, name: "Bolo de Milho com Coco Zero Açúcar", description: "Versão especial do nosso bolo de milho, ideal para quem busca uma opção mais saudável.", price: 45, ativo: true, glutenFree: true, zeroAcucar: true, semLactose: false },
   { id: 11, name: "Bolo de Banana", description: "Bolo caseiro de banana com pedaços de banana, macio e aromático, perfeito para o café da tarde.", price: 38, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 12, name: "Torta de Banana", description: "Deliciosa torta de banana com pedaços de banana e recheio cremoso.", price: 48, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false }
+  { id: 12, name: "Torta de Banana", description: "Deliciosa torta com pedaços de banana, canela e cobertura de calda de caramelo com bananas.", price: 48, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false }
 ]
 
 function Catalog() {
