@@ -77,6 +77,31 @@
   font-size: 0.9rem;
 }
 
+.footer-developed {
+  margin-top: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+}
+
+.footer-developed a {
+  display: inline-flex;
+  align-items: center;
+  gap: 5px;
+  color: var(--gold);
+  transition: opacity 0.3s ease;
+}
+
+.footer-developed a:hover {
+  opacity: 0.8;
+}
+
+.footer-olympus-logo {
+  height: 20px;
+  width: auto;
+}
+
 @media (max-width: 768px) {
   .footer-content {
     grid-template-columns: 1fr;

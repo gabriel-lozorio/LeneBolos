@@ -44,6 +44,13 @@ function Footer() {
 
         <div className="footer-bottom">
           <p>&copy; 2024 LeneBolos. Todos os direitos reservados.</p>
+          <p className="footer-developed">
+            Desenvolvido por{' '}
+            <a href="https://olympus-ai.com.br/" target="_blank" rel="noopener noreferrer">
+              <img src="/logo-olympus.png" alt="Olympus AI" className="footer-olympus-logo" />
+              Olympus AI
+            </a>
+          </p>
         </div>
       </div>
     </footer>
