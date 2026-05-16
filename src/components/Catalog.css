@@ -93,12 +93,41 @@
   line-height: 1.5;
 }
 
-.cake-price {
-  display: block;
-  font-size: 1.1rem;
+.cake-prices {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.cake-price-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  font-size: 1.05rem;
   font-weight: 600;
   color: var(--gold);
-  margin-bottom: 15px;
+}
+
+.cake-price-size {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 24px;
+  padding: 0 6px;
+  border-radius: 6px;
+  background: rgba(0, 0, 0, 0.06);
+  color: var(--dark);
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.5px;
+}
+
+.cake-price-value {
+  font-variant-numeric: tabular-nums;
 }
 
 .cake-btn {

@@ -1,19 +1,28 @@
 import './Catalog.css'
 
 const cakes = [
-  { id: 1, name: "Bolo de Chocolate", description: "Delicioso bolo de chocolate com cobertura cremosa de chocolate.", price: 38, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 2, name: "Bolo de Paçoca", description: "Bolo saboroso de paçoca com cobertura especial de amendoim.", price: 40, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 3, name: "Bolo de Laranja", description: "Bolo fresquinho de laranja com calda caseira de laranja.", price: 35, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 4, name: "Bolo de Limão", description: "Bolo cítrico e refrescante com cobertura de limão.", price: 35, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 5, name: "Bolo de Fubá com Goiabada", description: "Tradicional bolo de fubá com goiabada.", price: 35, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 6, name: "Bolo de Milho com Coco", description: "Bolo caseiro de milho com coco ralado, sabor da roça.", price: 35, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  // { id: 7, name: "Bolo de Cenoura com Gotas", description: "Bolo fofinho de cenoura com gotas de chocolate na massa.", price: 38, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 8, name: "Bolo de Cenoura com Calda", description: "Clássico bolo de cenoura com calda generosa de chocolate.", price: 38, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 9, name: "Bolo de Coco", description: "Bolo macio de coco com cobertura cremosa de coco.", price: 35, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 10, name: "Bolo de Milho com Coco Zero Açúcar", description: "Versão especial do nosso bolo de milho, ideal para quem busca uma opção mais saudável.", price: 45, ativo: true, glutenFree: true, zeroAcucar: true, semLactose: false },
-  { id: 11, name: "Bolo de Banana", description: "Bolo caseiro de banana com pedaços de banana, macio e aromático, perfeito para o café da tarde.", price: 38, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
-  { id: 12, name: "Torta de Banana", description: "Deliciosa torta com pedaços de banana, canela e cobertura de calda de caramelo com bananas.", price: 48, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false }
+  { id: 8,  name: "Bolo de Cenoura com Calda",                   description: "Clássico bolo de cenoura com calda generosa de chocolate.",                                  image: 8,  prices: { M: 27, G: 42 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 7,  name: "Bolo de Cenoura com Gotas",                   description: "Bolo fofinho de cenoura com gotas de chocolate na massa.",                                   image: 7,  prices: { M: 25, G: 40 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 1,  name: "Bolo de Chocolate com Calda",                 description: "Delicioso bolo de chocolate com cobertura cremosa de chocolate.",                            image: 1,  prices: { M: 27, G: 42 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 11, name: "Bolo de Banana com Canela",                   description: "Bolo caseiro de banana com canela, macio e aromático, perfeito para o café da tarde.",       image: 11, prices: { M: 25, G: 38 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 3,  name: "Bolo de Laranja com Cobertura",               description: "Bolo fresquinho de laranja com calda caseira de laranja.",                                   image: 3,  prices: { M: 25, G: 38 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 4,  name: "Bolo de Limão com Cobertura",                 description: "Bolo cítrico e refrescante com cobertura de limão.",                                         image: 4,  prices: { M: 25, G: 38 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 5,  name: "Bolo de Fubá com Goiabada",                   description: "Tradicional bolo de fubá com goiabada.",                                                     image: 5,  prices: { M: 25, G: 38 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 2,  name: "Bolo de Paçoca com Cobertura",                description: "Bolo saboroso de paçoca com cobertura especial de amendoim.",                                 image: 2,  prices: { M: 28, G: 40 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 6,  name: "Bolo de Milho com Coco",                      description: "Bolo caseiro de milho com coco ralado, sabor da roça.",                                      image: 6,  prices: { M: 25, G: 38 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 9,  name: "Bolo de Coco",                                description: "Bolo macio de coco com cobertura cremosa de coco.",                                          image: 9,  prices: { M: 25, G: 38 }, ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+  { id: 12, name: "Torta de Banana",                             description: "Deliciosa torta com pedaços de banana, canela e cobertura de calda de caramelo com bananas.", image: 12, prices: { G: 50 },        ativo: true, glutenFree: false, zeroAcucar: false, semLactose: false },
+
+  // Zero açúcar
+  { id: 13, name: "Bolo de Banana com Canela ",            description: "Versão zero açúcar do nosso bolo de banana com canela, para quem busca uma opção mais saudável.", image: 11, prices: { M: 35, G: 50 }, ativo: true, glutenFree: false, zeroAcucar: true,  semLactose: false },
+  { id: 10, name: "Bolo de Milho com Coco ",               description: "Versão zero açúcar do nosso bolo de milho com coco, ideal para quem busca uma opção mais saudável.", image: 10, prices: { M: 35, G: 48 }, ativo: true, glutenFree: true,  zeroAcucar: true,  semLactose: false },
+  { id: 14, name: "Bolo de Cenoura  – Sem Calda",          description: "Versão zero açúcar do bolo de cenoura, sem cobertura, para quem busca uma opção mais leve.",  image: 7,  prices: { M: 30, G: 48 }, ativo: false, glutenFree: false, zeroAcucar: true,  semLactose: false },
+  { id: 15, name: "Bolo de Cenoura  com Calda de Chocolate", description: "Versão zero açúcar do bolo de cenoura com calda de chocolate sem açúcar.",                  image: 8,  prices: { M: 35, G: 58 }, ativo: true, glutenFree: false, zeroAcucar: true,  semLactose: false },
+  { id: 16, name: "Bolo de Chocolate  – Sem Calda",        description: "Versão zero açúcar do bolo de chocolate, sem cobertura, para quem busca uma opção mais leve.", image: 1,  prices: { M: 30, G: 48 }, ativo: false, glutenFree: false, zeroAcucar: true,  semLactose: false },
+  { id: 17, name: "Bolo de Chocolate  com Calda de Chocolate", description: "Versão zero açúcar do bolo de chocolate com calda de chocolate sem açúcar.",              image: 1,  prices: { M: 35, G: 58 }, ativo: true, glutenFree: false, zeroAcucar: true,  semLactose: false }
 ]
+
+const formatBRL = (value) => `R$ ${value.toFixed(2).replace('.', ',')}`
 
 function Catalog() {
   const whatsappNumber = "5527999753620"
@@ -33,7 +42,7 @@ function Catalog() {
           {cakes.filter(cake => cake.ativo).map((cake) => (
             <div key={cake.id} className="cake-card">
               <div className="cake-image">
-                <img src={`/bolos/${cake.id}.jpeg`} alt={cake.name} />
+                <img src={`/bolos/${cake.image ?? cake.id}.jpeg`} alt={cake.name} />
                 <div className="cake-badges">
                   {cake.glutenFree && (
                     <span className="badge badge-gluten">
@@ -67,7 +76,14 @@ function Catalog() {
               <div className="cake-info">
                 <h3>{cake.name}</h3>
                 <p>{cake.description}</p>
-                <span className="cake-price">R$ {cake.price.toFixed(2).replace('.', ',')}</span>
+                <ul className="cake-prices">
+                  {Object.entries(cake.prices).map(([size, value]) => (
+                    <li key={size} className="cake-price-row">
+                      <span className="cake-price-size">{size}</span>
+                      <span className="cake-price-value">{formatBRL(value)}</span>
+                    </li>
+                  ))}
+                </ul>
                 <button
                   onClick={() => handleOrder(cake.name)}
                   className="btn btn-whatsapp cake-btn"
@@ -82,7 +98,10 @@ function Catalog() {
           ))}
         </div>
 
-        <p className="delivery-note">* Bolos com peso médio de 1kg<br />Taxa de entrega: valores a combinar</p>
+        <p className="delivery-note">
+          * Peso médio: M (500–650g) | G (900g–1,1kg)
+          <br />Taxa de entrega: valores a combinar
+        </p>
       </div>
     </section>
   )
